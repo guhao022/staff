@@ -1,0 +1,8 @@
+POST /cgi-bin/mmwebwx-bin/webwxbatchgetcontact?type=ex&r=1494057211000 HTTP/1.1
+Host: wx2.qq.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/602.3.12 (KHTML, like Gecko) Version/10.0.2 Safari/602.3.12
+Content-Length: 2064
+Content-Type: application/json; charset=UTF-8
+Accept-Encoding: gzip
+
+[{"Name":"wxpluginkey","Value":"1494051200","Path":"","Domain":"","Expires":"0001-01-01T00:00:00Z","RawExpires":"","MaxAge":0,"Secure":false,"HttpOnly":false,"Raw":"","Unparsed":null},{"Name":"wxuin","Value":"1808776466","Path":"","Domain":"","Expires":"0001-01-01T00:00:00Z","RawExpires":"","MaxAge":0,"Secure":false,"HttpOnly":false,"Raw":"","Unparsed":null},{"Name":"wxsid","Value":"ZLvJwadi4A5HWkvJ","Path":"","Domain":"","Expires":"0001-01-01T00:00:00Z","RawExpires":"","MaxAge":0,"Secure":false,"HttpOnly":false,"Raw":"","Unparsed":null},{"Name":"webwx_data_ticket","Value":"gSen+GWnkxwKjpUiqUitTnJl","Path":"","Domain":"","Expires":"0001-01-01T00:00:00Z","RawExpires":"","MaxAge":0,"Secure":false,"HttpOnly":false,"Raw":"","Unparsed":null}]

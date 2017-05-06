@@ -1,0 +1,7 @@
+POST /cgi-bin/mmwebwx-bin/webwxinit?pass_ticket=b0ZuigrBnRd2dgHu3CQQPcR%2BAPD%2BVTBl%2FUZ6AVAfO2EIn4bQB1M1SYM8%2Brf%2FU5jm&skey=@crypt_55e9e6ac_1c89ea48fa75568f65cd3c0efb69bb41&r=1494055867 HTTP/1.1
+Host: wx2.qq.com
+User-Agent: Go-http-client/1.1
+Content-Length: 147
+Accept-Encoding: gzip
+
+[{"Name":"wxpluginkey","Value":"1494051200","Path":"","Domain":"","Expires":"0001-01-01T00:00:00Z","RawExpires":"","MaxAge":0,"Secure":false,"HttpOnly":false,"Raw":"","Unparsed":null},{"Name":"wxuin","Value":"1808776466","Path":"","Domain":"","Expires":"0001-01-01T00:00:00Z","RawExpires":"","MaxAge":0,"Secure":false,"HttpOnly":false,"Raw":"","Unparsed":null},{"Name":"wxsid","Value":"ZLvJwadi4A5HWkvJ","Path":"","Domain":"","Expires":"0001-01-01T00:00:00Z","RawExpires":"","MaxAge":0,"Secure":false,"HttpOnly":false,"Raw":"","Unparsed":null},{"Name":"webwx_data_ticket","Value":"gSen+GWnkxwKjpUiqUitTnJl","Path":"","Domain":"","Expires":"0001-01-01T00:00:00Z","RawExpires":"","MaxAge":0,"Secure":false,"HttpOnly":false,"Raw":"","Unparsed":null}]
