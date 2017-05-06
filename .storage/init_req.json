@@ -1,4 +1,4 @@
-POST /cgi-bin/mmwebwx-bin/webwxinit?pass_ticket=b0ZuigrBnRd2dgHu3CQQPcR%2BAPD%2BVTBl%2FUZ6AVAfO2EIn4bQB1M1SYM8%2Brf%2FU5jm&skey=@crypt_55e9e6ac_1c89ea48fa75568f65cd3c0efb69bb41&r=1494055867 HTTP/1.1
+POST /cgi-bin/mmwebwx-bin/webwxinit?pass_ticket=b0ZuigrBnRd2dgHu3CQQPcR%2BAPD%2BVTBl%2FUZ6AVAfO2EIn4bQB1M1SYM8%2Brf%2FU5jm&skey=@crypt_55e9e6ac_1c89ea48fa75568f65cd3c0efb69bb41&r=1494059850 HTTP/1.1
 Host: wx2.qq.com
 User-Agent: Go-http-client/1.1
 Content-Length: 147

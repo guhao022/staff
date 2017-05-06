@@ -42285,3 +42285,476 @@
 ],
 "ClickReportInterval": 600000
 }
+{
+"BaseResponse": {
+"Ret": 0,
+"ErrMsg": ""
+}
+,
+"Count": 5,
+"ContactList": [{
+"Uin": 0,
+"UserName": "filehelper",
+"NickName": "文件传输助手",
+"HeadImgUrl": "/cgi-bin/mmwebwx-bin/webwxgeticon?seq=666041935&username=filehelper&skey=@crypt_55e9e6ac_1c89ea48fa75568f65cd3c0efb69bb41",
+"ContactFlag": 0,
+"MemberCount": 0,
+"MemberList": [],
+"RemarkName": "",
+"HideInputBarFlag": 0,
+"Sex": 0,
+"Signature": "",
+"VerifyFlag": 0,
+"OwnerUin": 0,
+"PYInitial": "WJCSZS",
+"PYQuanPin": "wenjianchuanshuzhushou",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"StarFriend": 0,
+"AppAccountFlag": 0,
+"Statues": 0,
+"AttrStatus": 0,
+"Province": "",
+"City": "",
+"Alias": "",
+"SnsFlag": 0,
+"UniFriend": 0,
+"DisplayName": "",
+"ChatRoomId": 0,
+"KeyWord": "fil",
+"EncryChatRoomId": "",
+"IsOwner": 0
+}
+,{
+"Uin": 0,
+"UserName": "@@b29972e7e215058e3539b58fa8372253d5c4adb450920712f31291957c921db7",
+"NickName": "哎喔科技工作组",
+"HeadImgUrl": "/cgi-bin/mmwebwx-bin/webwxgetheadimg?seq=666042429&username=@@b29972e7e215058e3539b58fa8372253d5c4adb450920712f31291957c921db7&skey=@crypt_55e9e6ac_1c89ea48fa75568f65cd3c0efb69bb41",
+"ContactFlag": 2,
+"MemberCount": 15,
+"MemberList": [{
+"Uin": 0,
+"UserName": "@a71b3c76310dddc53177d7dff2091ae1",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": "ltf"
+}
+,{
+"Uin": 0,
+"UserName": "@77097d584599610fe1e190ed0f252391b9ab545a0f0fe5f68c81cc40b6a1649c",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+,{
+"Uin": 0,
+"UserName": "@ff4b04e253074c8f898e359feb4c5f7b71e2841d308a00111088b0d23818754b",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+,{
+"Uin": 0,
+"UserName": "@c358eeb4bda0ae334aaaea2b88c96d04422d436edbeaf094246a7a7236104054",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+,{
+"Uin": 0,
+"UserName": "@afb0781a930236af2c6471531b6eef005e1076399168104ba483e08f815f3196",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+,{
+"Uin": 0,
+"UserName": "@d77bc34795c9a7fd06abddc4284822fc98047369411353d39d624497cd96d35c",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+,{
+"Uin": 0,
+"UserName": "@3e54ceea9df7dea7df63759c15508d71522cd667ccee18491f2667a3ec375ae8",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+,{
+"Uin": 0,
+"UserName": "@69d371ddc1988ebfd4db4c570902ce319ad460a8acb90ba2a9bf8d9aadd10db5",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+,{
+"Uin": 0,
+"UserName": "@9dce9c6b1c1e4beda28e988314a83f7e",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": "tlp"
+}
+,{
+"Uin": 0,
+"UserName": "@c56884dcdb8a2d0b37db12460b07a246405e1f49ba83739f53b4c9093b6904d3",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+,{
+"Uin": 0,
+"UserName": "@a6ea57328a574c7468e23ec5cee926ac60840a7d8c28995f3b1a3e9639ba2e9e",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+,{
+"Uin": 0,
+"UserName": "@e7ad22a9225f712947122c0a1016cd44",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": "c10"
+}
+,{
+"Uin": 0,
+"UserName": "@af4eeafffcb1446ea948dbb0c2a101b21bb8c3893bed60d03c2f7ce06837cabf",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+,{
+"Uin": 0,
+"UserName": "@68df8f9228eca78b5845881bc6ee750f338a935f020268f8cee125411cb3d748",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+,{
+"Uin": 0,
+"UserName": "@7a1d95e9fe8c29cb0c14fbfa69c7f60b",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": "dua"
+}
+],
+"RemarkName": "",
+"HideInputBarFlag": 0,
+"Sex": 0,
+"Signature": "",
+"VerifyFlag": 0,
+"OwnerUin": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"StarFriend": 0,
+"AppAccountFlag": 0,
+"Statues": 0,
+"AttrStatus": 0,
+"Province": "",
+"City": "",
+"Alias": "",
+"SnsFlag": 0,
+"UniFriend": 0,
+"DisplayName": "",
+"ChatRoomId": 0,
+"KeyWord": "",
+"EncryChatRoomId": "",
+"IsOwner": 0
+}
+,{
+"Uin": 0,
+"UserName": "@@c0f5ce6ad068c852c3bd404b1a0d0b88fcd55cd5bd16985f4b04987e51e1a0a8",
+"NickName": "🙃,Axiom,小帅",
+"HeadImgUrl": "/cgi-bin/mmwebwx-bin/webwxgetheadimg?seq=0&username=@@c0f5ce6ad068c852c3bd404b1a0d0b88fcd55cd5bd16985f4b04987e51e1a0a8&skey=@crypt_55e9e6ac_1c89ea48fa75568f65cd3c0efb69bb41",
+"ContactFlag": 0,
+"MemberCount": 3,
+"MemberList": [{
+"Uin": 0,
+"UserName": "@69d371ddc1988ebfd4db4c570902ce319ad460a8acb90ba2a9bf8d9aadd10db5",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+,{
+"Uin": 0,
+"UserName": "@c56884dcdb8a2d0b37db12460b07a246405e1f49ba83739f53b4c9093b6904d3",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+,{
+"Uin": 0,
+"UserName": "@c358eeb4bda0ae334aaaea2b88c96d04422d436edbeaf094246a7a7236104054",
+"NickName": "",
+"AttrStatus": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"MemberStatus": 0,
+"DisplayName": "",
+"KeyWord": ""
+}
+],
+"RemarkName": "",
+"HideInputBarFlag": 0,
+"Sex": 0,
+"Signature": "",
+"VerifyFlag": 0,
+"OwnerUin": 0,
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"StarFriend": 0,
+"AppAccountFlag": 0,
+"Statues": 1,
+"AttrStatus": 0,
+"Province": "",
+"City": "",
+"Alias": "",
+"SnsFlag": 0,
+"UniFriend": 0,
+"DisplayName": "",
+"ChatRoomId": 0,
+"KeyWord": "",
+"EncryChatRoomId": "",
+"IsOwner": 0
+}
+,{
+"Uin": 0,
+"UserName": "weixin",
+"NickName": "微信团队",
+"HeadImgUrl": "/cgi-bin/mmwebwx-bin/webwxgeticon?seq=666035891&username=weixin&skey=@crypt_55e9e6ac_1c89ea48fa75568f65cd3c0efb69bb41",
+"ContactFlag": 3,
+"MemberCount": 0,
+"MemberList": [],
+"RemarkName": "",
+"HideInputBarFlag": 0,
+"Sex": 0,
+"Signature": "微信团队官方帐号",
+"VerifyFlag": 56,
+"OwnerUin": 0,
+"PYInitial": "WXTD",
+"PYQuanPin": "weixintuandui",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"StarFriend": 0,
+"AppAccountFlag": 0,
+"Statues": 0,
+"AttrStatus": 4,
+"Province": "",
+"City": "",
+"Alias": "",
+"SnsFlag": 0,
+"UniFriend": 0,
+"DisplayName": "",
+"ChatRoomId": 0,
+"KeyWord": "wei",
+"EncryChatRoomId": "",
+"IsOwner": 0
+}
+,{
+"Uin": 0,
+"UserName": "@69d371ddc1988ebfd4db4c570902ce319ad460a8acb90ba2a9bf8d9aadd10db5",
+"NickName": "🙃",
+"HeadImgUrl": "/cgi-bin/mmwebwx-bin/webwxgeticon?seq=666036030&username=@69d371ddc1988ebfd4db4c570902ce319ad460a8acb90ba2a9bf8d9aadd10db5&skey=@crypt_55e9e6ac_1c89ea48fa75568f65cd3c0efb69bb41",
+"ContactFlag": 3,
+"MemberCount": 0,
+"MemberList": [],
+"RemarkName": "",
+"HideInputBarFlag": 0,
+"Sex": 1,
+"Signature": "大家都是读书人，说话装逼点......",
+"VerifyFlag": 0,
+"OwnerUin": 0,
+"PYInitial": "?",
+"PYQuanPin": "?",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"StarFriend": 0,
+"AppAccountFlag": 0,
+"Statues": 0,
+"AttrStatus": 102501,
+"Province": "北京",
+"City": "朝阳",
+"Alias": "",
+"SnsFlag": 1,
+"UniFriend": 0,
+"DisplayName": "",
+"ChatRoomId": 0,
+"KeyWord": "",
+"EncryChatRoomId": "",
+"IsOwner": 0
+}
+],
+"SyncKey": {
+"Count": 4,
+"List": [{
+"Key": 1,
+"Val": 666042544
+}
+,{
+"Key": 2,
+"Val": 666042579
+}
+,{
+"Key": 3,
+"Val": 666042329
+}
+,{
+"Key": 1000,
+"Val": 1494051200
+}
+]
+}
+,
+"User": {
+"Uin": 1808776466,
+"UserName": "@c56884dcdb8a2d0b37db12460b07a246405e1f49ba83739f53b4c9093b6904d3",
+"NickName": "Axiom",
+"HeadImgUrl": "/cgi-bin/mmwebwx-bin/webwxgeticon?seq=345790111&username=@c56884dcdb8a2d0b37db12460b07a246405e1f49ba83739f53b4c9093b6904d3&skey=@crypt_55e9e6ac_1c89ea48fa75568f65cd3c0efb69bb41",
+"RemarkName": "",
+"PYInitial": "",
+"PYQuanPin": "",
+"RemarkPYInitial": "",
+"RemarkPYQuanPin": "",
+"HideInputBarFlag": 0,
+"StarFriend": 0,
+"Sex": 1,
+"Signature": "Everything is axioms！",
+"AppAccountFlag": 0,
+"VerifyFlag": 0,
+"ContactFlag": 0,
+"WebWxPluginSwitch": 0,
+"HeadImgFlag": 1,
+"SnsFlag": 0
+}
+,
+"ChatSet": "filehelper,@@b29972e7e215058e3539b58fa8372253d5c4adb450920712f31291957c921db7,@@c0f5ce6ad068c852c3bd404b1a0d0b88fcd55cd5bd16985f4b04987e51e1a0a8,weixin,@69d371ddc1988ebfd4db4c570902ce319ad460a8acb90ba2a9bf8d9aadd10db5,",
+"SKey": "@crypt_55e9e6ac_1c89ea48fa75568f65cd3c0efb69bb41",
+"ClientVersion": 637863729,
+"SystemTime": 1494059851,
+"GrayScale": 1,
+"InviteStartCount": 40,
+"MPSubscribeMsgCount": 1,
+"MPSubscribeMsgList": [{
+"UserName": "@d86531776032efdaa4b6719e557c04fb",
+"MPArticleCount": 1,
+"MPArticleList": [{
+"Title": "柠檬香草，给妈妈的爱",
+"Digest": "原以为，只是眨眼的一瞬间\n你却从芳华到了暮年",
+"Cover": "http://mmbiz.qpic.cn/mmbiz_png/b2icp3u17BuHS4mBCHgwPPHuZTLeyAkAB05mLr9BaBInC0vgj88ic3OK3te5K8hYMbtoLbmzKwibDicSPcsNYsnmIg/640?wxtype=png&wxfrom=0",
+"Url": "http://mp.weixin.qq.com/s?__biz=MzI3MjQ4OTI5NA==&mid=2247484134&idx=1&sn=e1ffca659996ac03dbb06d3c8f271571&chksm=eb308cc7dc4705d18c3899c6bdccd9118167d28c774ab56803763157046efd8e488e6d784de9&scene=0#rd"
+}
+],
+"Time": 1493981346,
+"NickName": "几予GIVEU"
+}
+],
+"ClickReportInterval": 600000
+}

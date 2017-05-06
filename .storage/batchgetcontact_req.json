@@ -1,7 +1,7 @@
-POST /cgi-bin/mmwebwx-bin/webwxbatchgetcontact?type=ex&r=1494057211000 HTTP/1.1
+POST /cgi-bin/mmwebwx-bin/webwxbatchgetcontact?type=ex&r=1494059851000 HTTP/1.1
 Host: wx2.qq.com
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/602.3.12 (KHTML, like Gecko) Version/10.0.2 Safari/602.3.12
-Content-Length: 2064
+Content-Length: 169
 Content-Type: application/json; charset=UTF-8
 Accept-Encoding: gzip
 
