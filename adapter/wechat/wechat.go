@@ -3,8 +3,8 @@ package wechat
 import (
 	"fmt"
 	"github.com/num5/axiom"
+	"github.com/num5/logger"
 	"github.com/num5/webot"
-	"log"
 	"strings"
 )
 
@@ -82,6 +82,14 @@ func (w *WeChatAdapter) Process() error {
 	w.Wechat.Handle(`/msg`, func(evt webot.Event) {
 		msg := evt.Data.(webot.EventMsgData)
 
+		err := Stor(".storage/data/", "msg.json", msg)
+
+		if err != nil {
+			logger.Errorf("storage error: %v", err)
+		}
+
+		w.revoke(msg)
+
 		if msg.IsGroupMsg {
 
 			if msg.AtMe {
@@ -150,7 +158,7 @@ func (w *WeChatAdapter) chatRoomMember(room_name string) (map[string]int, error)
 		member, err := w.Wechat.ContactByGGID(v.GGID)
 
 		if err != nil {
-			log.Printf("[ERRO] 抓取组群用户 [%s] 信息失败: %s... ", v.NickName)
+			logger.Errorf("抓取组群用户 [%s] 信息失败: %s... ", v.NickName)
 		} else {
 			if member.Sex == 1 {
 				man++
