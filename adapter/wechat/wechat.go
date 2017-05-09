@@ -2,12 +2,12 @@ package wechat
 
 import (
 	"fmt"
+	"github.com/garyburd/redigo/redis"
 	"github.com/num5/axiom"
 	"github.com/num5/logger"
 	"github.com/num5/webot"
 	"strings"
 	"time"
-	"github.com/garyburd/redigo/redis"
 )
 
 const (
@@ -56,7 +56,7 @@ func NewWeChat(bot *axiom.Robot) *WeChatAdapter {
 	return &WeChatAdapter{
 		bot:    bot,
 		Wechat: wechat,
-		conn: conn,
+		conn:   conn,
 	}
 }
 
@@ -91,13 +91,13 @@ func (w *WeChatAdapter) Process() error {
 	w.Wechat.Handle(`/msg`, func(evt webot.Event) {
 		msg := evt.Data.(webot.EventMsgData)
 
-		/*err := w.Stor(msg)
+		err := w.Stor(msg)
 
 		if err != nil {
 			logger.Errorf("storage error: %v", err)
 		}
 
-		w.revoke(msg)*/
+		w.revoke(msg)
 
 		if msg.IsGroupMsg {
 
@@ -189,4 +189,3 @@ func (w *WeChatAdapter) chatRoomMember(room_name string) (map[string]int, error)
 
 	return stats, nil
 }
-

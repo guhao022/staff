@@ -20,7 +20,7 @@ type message struct {
 	ReceiveTime time.Time          `json:"receive_time"`
 }
 
-func (w *WeChatAdapter)Stor(data webot.EventMsgData) error {
+func (w *WeChatAdapter) Stor(data webot.EventMsgData) error {
 	msg := new(message)
 	id := ider.NewID(1).Next()
 	msg.ID = id
@@ -30,8 +30,12 @@ func (w *WeChatAdapter)Stor(data webot.EventMsgData) error {
 	return w.redisWrite(msg)
 }
 
-func (w *WeChatAdapter)redisWrite(msg *message) error {
-	_, err := w.conn.Do("SET", msg.Msg.MsgID, msg.Msg.Content, "EX", EXPIRATION_TIME)
+func (w *WeChatAdapter) redisWrite(msg *message) error {
+	jmsg, err := json.Marshal(msg.Msg)
+	if err != nil {
+		return err
+	}
+	_, err = w.conn.Do("SET", msg.Msg.MsgID, jmsg, "EX", EXPIRATION_TIME)
 	if err != nil {
 		return err
 	}

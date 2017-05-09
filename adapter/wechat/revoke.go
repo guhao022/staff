@@ -1,11 +1,12 @@
 package wechat
 
 import (
-	"github.com/num5/webot"
-	"regexp"
 	"encoding/xml"
 	"github.com/num5/logger"
-
+	"github.com/num5/webot"
+	"regexp"
+	"github.com/garyburd/redigo/redis"
+	"encoding/json"
 )
 
 var char_string = map[string]string{
@@ -18,9 +19,9 @@ type sysmsg struct {
 }
 
 type revokemsg struct {
-	Session string `xml:"session"`
-	Oldmsgid string `xml:"oldmsgid"`
-	Msgid string `xml:"msgid"`
+	Session    string `xml:"session"`
+	Oldmsgid   string `xml:"oldmsgid"`
+	Msgid      string `xml:"msgid"`
 	Replacemsg string `xml:"replacemsg"`
 }
 
@@ -32,7 +33,7 @@ func (w *WeChatAdapter) revoke(data webot.EventMsgData) {
 		var reg *regexp.Regexp
 		revokemsg := data.Content
 		for k, v := range char_string {
-			reg = regexp.MustCompile(`(`+k+`)`)
+			reg = regexp.MustCompile(`(` + k + `)`)
 			revokemsg = reg.ReplaceAllString(revokemsg, v)
 		}
 
@@ -43,9 +44,19 @@ func (w *WeChatAdapter) revoke(data webot.EventMsgData) {
 			logger.Errorf("xml parse err:%v", err)
 		}
 
-		logger.Tracf("revoke:%v", revoke)
+		bytemsg, err := redis.Bytes(w.conn.Do("GET", revoke.Revokemsg.Msgid))
 
-		w.Wechat.SendTextMsg(revoke.Revokemsg.Msgid, data.FromUserName)
+		if err != nil {
+			logger.Errorf("redis GET err:%v", err)
+		}
+
+		var msg webot.EventMsgData
+		err = json.Unmarshal(bytemsg, &msg)
+
+		if err != nil {
+			logger.Errorf("unmarshal bytemsg err:%v", err)
+		}
+
+		w.Wechat.SendTextMsg(msg.Content, data.FromUserName)
 	}
 }
-
