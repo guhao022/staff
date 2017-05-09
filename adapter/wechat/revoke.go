@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"encoding/xml"
 	"github.com/num5/logger"
-	"github.com/go-redis/redis"
+
 )
 
 var char_string = map[string]string{
@@ -26,6 +26,7 @@ type revokemsg struct {
 
 // 撤销取回
 func (w *WeChatAdapter) revoke(data webot.EventMsgData) {
+
 	if data.MsgType == MSG_WITHDRAW {
 
 		var reg *regexp.Regexp

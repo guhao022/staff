@@ -6,6 +6,8 @@ import (
 	"github.com/num5/logger"
 	"github.com/num5/webot"
 	"strings"
+	"time"
+	"github.com/garyburd/redigo/redis"
 )
 
 const (
@@ -36,6 +38,7 @@ const (
 type WeChatAdapter struct {
 	bot    *axiom.Robot
 	Wechat *webot.WeChat
+	conn   redis.Conn
 }
 
 func NewWeChat(bot *axiom.Robot) *WeChatAdapter {
@@ -45,9 +48,15 @@ func NewWeChat(bot *axiom.Robot) *WeChatAdapter {
 		panic(err)
 	}
 
+	conn, err := redis.DialTimeout("tcp", "127.0.0.1:6379", 0, 1*time.Second, 1*time.Second)
+	if err != nil {
+		panic(err)
+	}
+
 	return &WeChatAdapter{
 		bot:    bot,
 		Wechat: wechat,
+		conn: conn,
 	}
 }
 
@@ -82,13 +91,13 @@ func (w *WeChatAdapter) Process() error {
 	w.Wechat.Handle(`/msg`, func(evt webot.Event) {
 		msg := evt.Data.(webot.EventMsgData)
 
-		err := Stor(".storage/data/", "msg.json", msg)
+		/*err := w.Stor(msg)
 
 		if err != nil {
 			logger.Errorf("storage error: %v", err)
 		}
 
-		w.revoke(msg)
+		w.revoke(msg)*/
 
 		if msg.IsGroupMsg {
 
@@ -120,7 +129,7 @@ func (w *WeChatAdapter) Process() error {
 				Text:    msg.Content,
 				ReplyTo: []interface{}{msg.FromUserName},
 			}
-			x.autoReplay(msg)
+			//x.autoReplay(msg)
 
 			w.bot.ReceiveMessage(amsg)
 		}
@@ -180,3 +189,4 @@ func (w *WeChatAdapter) chatRoomMember(room_name string) (map[string]int, error)
 
 	return stats, nil
 }
+

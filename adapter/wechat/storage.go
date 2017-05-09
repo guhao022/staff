@@ -10,20 +10,32 @@ import (
 	"time"
 )
 
+const (
+	EXPIRATION_TIME = 2 * 60
+)
+
 type message struct {
 	ID          int64              `json:"id"`
 	Msg         webot.EventMsgData `json:"msg"`
 	ReceiveTime time.Time          `json:"receive_time"`
 }
 
-func Stor(storpath, file string, data webot.EventMsgData) error {
+func (w *WeChatAdapter)Stor(data webot.EventMsgData) error {
 	msg := new(message)
 	id := ider.NewID(1).Next()
 	msg.ID = id
 	msg.Msg = data
 	msg.ReceiveTime = time.Now()
 
-	return write(storpath, file, msg)
+	return w.redisWrite(msg)
+}
+
+func (w *WeChatAdapter)redisWrite(msg *message) error {
+	_, err := w.conn.Do("SET", msg.Msg.MsgID, msg.Msg.Content, "EX", EXPIRATION_TIME)
+	if err != nil {
+		return err
+	}
+	return nil
 }
 
 func write(storpath, file string, value interface{}) error {
