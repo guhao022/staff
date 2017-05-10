@@ -98,6 +98,9 @@ func (w *WeChatAdapter) Process() error {
 		}
 
 		w.revoke(msg)
+		guard := newGuard(w.Wechat)
+
+		guard.autoAcceptAddFirendRequest(msg)
 
 		if msg.IsGroupMsg {
 

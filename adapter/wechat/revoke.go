@@ -57,6 +57,12 @@ func (w *WeChatAdapter) revoke(data webot.EventMsgData) {
 			logger.Errorf("unmarshal bytemsg err:%v", err)
 		}
 
-		w.Wechat.SendTextMsg(msg.Content, data.FromUserName)
+		if msg.IsMediaMsg {
+			if path, e := w.Wechat.DownloadMedia(msg.MediaURL, msg.OriginalMsg[`MsgId`].(string)); e == nil {
+				w.Wechat.SendFile(path, data.FromUserName)
+			}
+		} else {
+			w.Wechat.SendTextMsg(msg.Content, data.FromUserName)
+		}
 	}
 }
